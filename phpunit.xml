@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="./tests/bootstrap.php" colors="true">
+
+    <testsuites>
+        <testsuite name="BCC test suite">
+            <directory suffix="Test.php">./tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory>./tests</directory>
+        </whitelist>
+        <blacklist>
+            <directory>./vendor</directory>
+            <directory>./build</directory>
+        </blacklist>  
+    </filter>
+</phpunit>
