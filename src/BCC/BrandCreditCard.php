@@ -25,7 +25,7 @@ class BrandCreditCard
         ];
 
         foreach ($types as $key => $pattern) {
-            if(preg_match($pattern,$ccNumber)){
+            if (preg_match($pattern, $ccNumber)) {
                 return $key;
             }
         }
