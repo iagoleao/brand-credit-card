@@ -1,5 +1,15 @@
 {
     "name":"iagoleao/brand-credit-card",
+    "description": "A simple method to capture brand of credit card number",
+    "keywords": ["brand", "credit card"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Iago Leão",
+            "homepage": "http://iagoleao.github.io/online-cv"
+        }
+    ],
     "require-dev": {
         "phpunit/phpunit": "^6.3"
     },
