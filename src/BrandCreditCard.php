@@ -1,9 +1,11 @@
 <?php
 
+namespace BCC;
+
 class BrandCreditCard
 {
-    public static function getBrand($ccNumber){
-
+    public static function getBrand($ccNumber)
+    {
         $types = [
             'amex' => '/^3[47][0-9]{13}/',
             'dinners' => '/^3(?:0[0-5]|[68][0-9])[0-9]{11}/',
@@ -16,12 +18,11 @@ class BrandCreditCard
             'jcb' => '/^(?:2131|1800|35\d{3})\d{11}/',
             'dankort' => '/^(5019)\d{12}$/',
             'aura' => '/^50[0-9]\d{14,17}$/',
-            'electron' => '/^(4026|417500|4405|4508|4844|4913|4917)\d+$/',
-            'unionpay' => '/^(62|88)\d{16,17,18,19}$/'
+            'unionpay' => '/^(62[0-9]{14,17})$/',
         ];
 
-        foreach ($types as $key => $pattern ){
-            if(preg_match($pattern,$ccNumber)){
+        foreach ($types as $key => $pattern) {
+            if (preg_match($pattern, $ccNumber)) {
                 return $key;
             }
         }
