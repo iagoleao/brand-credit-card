@@ -18,9 +18,12 @@
   },
   "autoload": {
     "psr-4": {
-      "BCC\\": "src/BCC"
+      "BCC\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BCCTests\\": "tests/BCC"
     }
   }
 }
-
-

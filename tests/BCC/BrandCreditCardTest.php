@@ -1,8 +1,9 @@
 <?php
 
-namespace BCC;
+namespace BCCTest;
 
 use PHPUnit\Framework\TestCase;
+use BCC\BrandCreditCard;
 
 final class BrandCreditCardTest extends TestCase
 {
@@ -15,7 +16,12 @@ final class BrandCreditCardTest extends TestCase
             array('dinners', '30344401017765'),
             array('hipercard', '6062820640453968'),
             array('elo', '6362970000457013'),
-            array('aura', '5078601870000127985')
+            array('aura', '5078601870000127985'),
+            array('discover', '6011031106078701'),
+            array('dankort', '5019832931751691'),
+            array('jcb', '3542737036413249'),
+            array('maestro', '5038365696820911'),
+            array('unionpay', '6297096924255869'),
         );
     }
 
